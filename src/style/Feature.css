@@ -1,0 +1,139 @@
+.feature-container {
+  max-width: 1165px;
+  margin: 0 auto;
+  padding: 0px 40px;
+  text-align: center;
+  background-color: #ffff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.feature-title span {
+  color: #007bff;
+}
+
+.resource-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.resource-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.resource-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #007bff;
+}
+
+.resource-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 15px 10px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.read-more {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 10px 10px 20px;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #0056b3;
+}
+
+.hire-developers {
+  margin-top: 50px;
+  background: #E4ECF7;
+  color: black;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.hire-developers h3 {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  /* margin-right: 30%; */
+
+}
+
+.hire-developers h3 span {
+  color: blueviolet;
+}
+
+.hire-button {
+  background: #0b0d10;
+  color: #f0f0f0;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1em 2em;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  /* margin-left: 75%; */
+  border: 1px solid linear-gradient(to right, blue, red);
+  position: relative;
+}
+
+.hire-button::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  /* width: 100%; */
+  border-radius: 1000px;
+}
+
+.hire-button:hover {
+  background: linear-gradient(#FFC656, #F16063);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .feature-title {
+    font-size: 2rem;
+  }
+
+  .resource-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .resource-card h3 {
+    font-size: 1rem;
+  }
+
+  .hire-developers h3 {
+    font-size: 1.3rem;
+  }
+}

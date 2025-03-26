@@ -1,0 +1,304 @@
+.home_banner {
+  position: relative;
+  width: 100%;
+  height: 115vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../../public/images/dot.png'),black;
+  
+}
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+.left-content {
+  color: white;
+  font-size: 2.8rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.work-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(107deg, #8300ae, #d11450, #ee2e24);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: -2%;
+ 
+}
+.circle {
+  --size: 1px; /* Is value ko change karke circle ka size adjust karein */
+  width: var(--size);
+  height: var(--size);
+  background: url('../../public/images/dot.png'), black;
+  border-radius: 50%;
+  border: calc(var(--size) * 5.1) solid #fff; /* Border size bhi dynamic */
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 95%;
+ margin-top: 70%;
+  z-index: 9999;
+  width: 30%;
+  position: absolute;
+  right: -5%;
+  bottom: 22%;
+  width: 20%;
+  
+}
+
+/* .banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  max-width: 1200px;
+  position: relative;
+} */
+/* .left-content {
+  flex: 1;
+  color: white;
+  font-family: Arial, sans-serif;
+} */
+.left-content h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+  /* line-height: 1.3; */
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInUp 1.5s ease-in-out forwards;
+margin-left: -15%;
+/* color: linear-gradient(90deg, #ffcc00, #ff9900); */
+}
+.left-content h2 span{
+  color: aqua;
+}
+.left-content h2 {
+  padding: 25px;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transform: translateY(-20px);
+  /* margin-top: 10px; */
+  animation: fadeIn 1.5s ease-in-out forwards 0.5s;
+  color: violet;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-right: 40%;
+}
+.work-btn {
+  background: linear-gradient(90deg, #facc15, #eab308);
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 1.5s ease-in-out forwards 1s;
+}
+.work-btn:hover {
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.9);
+  transform: scale(1.05);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.scroll-down {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  animation: bounce 2s infinite;
+}
+.arrow {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+.scroll-down:hover .arrow {
+  transform: translateY(5px);
+}
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  width: 400px;
+  height: 400px;
+ /* background: linear-gradient(#5A585A, #090947); */
+  border-radius: 500%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+  margin-top: -20%;
+  margin-left: -10%;
+}
+.circle p{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.view-more-btn {
+ margin-top: 250px; 
+  position: absolute;
+  padding: 12px 25px;
+  /* padding: 10px 16px; */
+  background: linear-gradient(90deg, #facc15, #eab308);  color: white;
+  border: none;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+  /* transition: transform 0.3s ease, background 0.3s ease; */
+}
+.view-more-btn:hover {
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.9);
+  transform: scale(1.05);
+}
+.view-more-btn:active {
+  transform: scale(0.95);
+}
+.boxes {
+  display: flex;
+  gap: 15px;
+  margin-top: -90%;
+}
+.box {
+  width: 160px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  /* background: white; */
+  text-align: center;
+  line-height: 50px;
+}
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.box-title {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 0.75rem;
+  padding: 3px 6px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.box:hover .box-title {
+  opacity: 1;
+}
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(5px);
+  }
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+.overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+.overlay.hidden { 
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ye circle ke ander ka text color hai */
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(-500px);
+  transition: opacity 0.5s ease, transform 0.5s ease, color 0.5s ease;
+  font-family: sans-serif;
+  font-weight: bold;
+  font: 1em sans-serif;
+}
+.animated-text.show {
+  opacity: 1;
+  transform: translateX(10);
+  color: white;
+}

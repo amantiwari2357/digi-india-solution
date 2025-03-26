@@ -1,0 +1,172 @@
+.mission-page-container {
+    background-color: black;
+    padding: 1px 1px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .main-heading {
+    text-align: center;
+    font-size: 3rem; 
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+  
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  
+    padding: 1px;
+    border-radius: 12px;
+    background-color: #f0f8ff; 
+  
+    box-shadow: 0 8px 24px rgba(0, 123, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .main-heading:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px rgba(0, 123, 255, 0.3);
+  }
+  
+  
+  .intro-section, .vision-section, .mission-section {
+    background: black;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .section-heading {
+    font-size: 2.5rem; /* Slightly larger for emphasis */
+    color: #007bff; /* Primary blue color */
+    margin-bottom: 30px; /* Extra space below */
+    font-weight: 700; /* Bold text */
+    text-align: center; /* Center alignment */
+    text-transform: uppercase; /* Make all letters uppercase */
+    letter-spacing: 2px; /* Spacing between letters */
+    position: relative; /* For decorative underline */
+    padding-bottom: 1px; /* Space for underline */
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover Effect */
+  .section-heading:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Decorative Underline */
+  .section-heading::after {
+    content: ''; /* Empty content for styling */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    border-radius: 2px;
+    transition: width 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Underline Expansion on Hover */
+  .section-heading:hover::after {
+    width: 120px; /* Expands the underline */
+  }
+  
+  /* Shadow for Depth */
+  .section-heading-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  
+  .section-text, .intro-text {
+    font-size: 1.2rem; 
+    line-height: 1.9; 
+    color: white; 
+    margin-bottom: 20px; 
+    text-align: justify;
+  
+    background-color: black; 
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .section-text:hover, .intro-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Emphasizing important words */
+  .section-text strong, .intro-text strong {
+    color: #007bff; /* Highlight strong text */
+    font-weight: bold;
+  }
+  
+  
+  .icon {
+    font-size: 3.5rem; /* Slightly larger for better visibility */
+    color: #007bff; /* Primary blue color */
+    margin-bottom: 15px; /* More spacing below */
+    display: inline-block; /* Allows for animations */
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.3); /* Subtle glowing shadow */
+    padding: 15px; /* Adds space around the icon */
+    background-color: #f0f8ff; /* Light background for contrast */
+    border-radius: 50%; /* Circular background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    cursor: pointer; /* Indicates interactivity */
+  }
+  
+  /* Hover Effect */
+  .icon:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1) rotate(5deg); /* Slight zoom and rotation */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Active/Click Effect */
+  .icon:active {
+    transform: scale(0.95); /* Shrinks slightly on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduces shadow when clicked */
+  }
+  
+  /* Animation for Floating Effect */
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .icon.floating {
+    animation: float 3s ease-in-out infinite; /* Smooth floating animation */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .main-heading {
+      font-size: 2rem;
+    }
+  
+    .section-heading {
+      font-size: 1.5rem;
+    }
+  
+    .section-text, .intro-text {
+      font-size: 1rem;
+    }
+  }
+  

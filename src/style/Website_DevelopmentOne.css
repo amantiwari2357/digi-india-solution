@@ -1,0 +1,42 @@
+/* style/Website_DevelopmentOne.css */
+
+.webDevContainer {
+  position: relative;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.backgroundText {
+  position: absolute;
+  font-size: 10rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #fca5a5, #a5b4fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.1;
+  text-align: center;
+  user-select: none;
+}
+
+.scrollingPhone {
+  position: relative;
+  animation: scroll 5s infinite alternate ease-in-out;
+}
+
+.phoneImage {
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}

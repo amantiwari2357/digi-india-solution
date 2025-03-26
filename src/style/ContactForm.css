@@ -1,0 +1,137 @@
+.contact-form-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 60px;
+    border-radius: 0px;
+  }
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    border-radius: 10px black;
+    box-shadow: 3 4px 40px black; /* Soft shadow */
+
+  }
+  /* image ke side me dark color ke liye */
+  .left-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 88%;
+    /* background: rgba(0, 0, 0, 0.5); */
+  }
+@media (max-width: 768px) {
+    .left-section {
+        padding: 40px;
+        min-height: auto; 
+    }
+}
+  .left-section h2 {
+    font-size: 3.6rem;
+    margin-bottom: 100px;
+    font-family: sans-serif;
+    color: yellow;
+    font-weight: bold;
+    
+
+  }
+  .left-section p {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: violet;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  .contact-btn {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-bottom: 3%;
+  }
+  .right-section {
+    flex: 1;
+    padding: 20px;
+    /* background-color: #111; */
+    border-radius: 10px;
+    background-color: black;
+    margin-left: 5%;
+    box-shadow: 2 10px 20px red; /* Soft shadow */
+    color: white;
+  
+  } 
+  form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px black;
+  }
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; 
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+  }
+  .form-group input,
+  .form-group select {
+    width: 50%;
+    padding: 10px;
+    /* border: none; */
+    /* border-radius: 10px ; */
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+  }
+  textarea {
+    width: 88%;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    /* border-radius: 5px black; */
+  }
+  
+.designation-profile{
+  width: 92%;
+  /* height: 60%; */
+  padding: 20px;
+  border-radius: 15px;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+}
+  .submit-btn {
+    background-color: yellow;
+    /* background: linear-gradient(10px red); */
+    color: black;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 30%;
+   border-radius: 50px;
+   margin-left: 30%;
+   box-shadow: 10 10px 80px violet
+  }
+  

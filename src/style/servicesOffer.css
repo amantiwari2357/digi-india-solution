@@ -1,0 +1,174 @@
+/* Full background image */
+.services-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* background: url('/images/background1.jpg') no-repeat center center/cover; */
+    text-align: center;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.section-title span {
+    color: violet;
+}
+
+/* Swiper Slider */
+.services-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+/* Slide Cards */
+.service-slide {
+    transition: transform 0.5s ease-in-out;
+    perspective: 1200px;
+}
+
+/* Service Card - Unique Backgrounds */
+.service-card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Backgrounds for Each Card */
+.service-card:nth-child(1) {
+    background-image: url('/images/bg-architecture.jpg');
+}
+
+.service-card:nth-child(2) {
+    background-image: url('/images/bg-ecommerce.jpg');
+}
+
+.service-card:nth-child(3) {
+    background-image: url('/images/bg-education.jpg.jpg');
+}
+
+.service-card:nth-child(4) {
+    background-image: url('/images/bg-gaming.jpg');
+}
+
+/* 3D Hover Effect */
+.service-card:hover {
+    transform: rotateY(15deg) scale(1.08);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Dark Overlay for Readability */
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+/* Service Content */
+.service-content {
+    position: relative;
+    z-index: 2;
+    padding: 15px;
+    color: #fff;
+    text-align: left;
+}
+
+.service-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    color: #ffd700;
+}
+
+.service-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* Animated Appearance */
+.service-slide:nth-child(1) {
+    animation: fadeIn 0.8s ease-in-out 0.5s forwards;
+}
+
+.service-slide:nth-child(2) {
+    animation: fadeIn 0.8s ease-in-out 1s forwards;
+}
+
+.service-slide:nth-child(3) {
+    animation: fadeIn 0.8s ease-in-out 1.5s forwards;
+}
+
+.service-slide:nth-child(4) {
+    animation: fadeIn 0.8s ease-in-out 2s forwards;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Marquee Effect for Tools */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    margin-top: 50px;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marqueeScroll 12s linear infinite;
+}
+
+.marquee-img {
+    width: 120px;
+    margin: 0 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.marquee-img:hover {
+    transform: scale(1.1);
+}
+
+/* Marquee Scroll Animation */
+@keyframes marqueeScroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,106 @@
+.main-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 40px 0;
+  color: white;
+  padding: -4px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 10px 0;
+    gap: 50px;
+  }
+  
+  .video-container video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 40px;
+  }
+  
+  .image-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: red;
+
+  }
+  .image-card.row-reverse {
+    flex-direction: row-reverse;
+  }
+  .image-card img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+  }
+  
+  .image-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .text-content {
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px red;
+  }
+  
+  .image-card.row-reverse .text-content {
+    text-align: right;
+  }
+  
+  /* Smooth fade-in effect */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .view-more-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* margin-left: 60px; */
+  }
+  .view-more-button:hover {
+    background-color: #0056b3;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

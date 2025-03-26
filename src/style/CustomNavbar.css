@@ -1,0 +1,238 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.hidden_header {
+  /* position: fixed; */
+  width: 96.7%;
+  top: 0;
+  left: 0;
+  background: 
+  url('../../public/images/dot.png'), black; 
+  padding: 5px 20px;
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  position: relative;
+}
+.hidden_header.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+#nav-container {
+  /* width: 20%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px; */
+  margin-right: 100%;
+  display: flex;
+  padding: 5px 10px;
+  width: 20%;
+  max-width: 1200px;
+  justify-content: space-between;
+  
+}
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex: 1;
+  justify-content: flex-start;
+  margin-left: -700px;
+}
+.mobile-number {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-left: 40px;
+}
+#nav-toggle {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+#nav-toggle span {
+  display: block;
+  width: 30px;
+  height: 2.5px;
+  background: white;
+  margin: 5px 0;
+  margin-left: 400%;
+  transition: all 0.3s ease-in-out;
+}
+#nav-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+#nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+#nav-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.navbar-logo {
+  height: 50px;
+  max-width: 200px;
+}
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: -600px;
+  
+}
+.gradient-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: linear-gradient(90deg, #0073b1, #00a8e8);
+  margin-right: 10%;
+  background: linear-gradient(90deg, #8300ae, #d11450, #ee2e24);
+}
+.gradient-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+}
+.gradient-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+#nav-overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #1a1a1a;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+#nav-overlay.open {
+  left: 0;
+}
+#close-overlay {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+#close-overlay:hover {
+  color: #ff9800;
+}
+
+#nav-fullscreen {
+  text-align: center;
+  margin-right: 70%;
+}
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-nav li {
+  margin: 20px 0;
+}
+.navbar-nav li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-nav li a:hover {
+  color: #ff9800;
+}
+#nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  clip-path: circle(0% at 100% 0);
+  transition: clip-path 0.6s ease-in-out;
+  z-index: 1000;
+}
+#nav-overlay.open {
+  width: 100%;
+  clip-path: circle(150% at 100% 0);
+}
+#nav-fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.navbar-nav {
+  list-style: none;
+  text-align: center;
+}
+.navbar-nav li {
+  margin: 20px 0;
+  margin-left: 100%;
+  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  /* background-color: black; */
+  color: white;
+  min-width: 150px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  list-style: none;
+}
+.service{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #d11450;
+}
+.service :hover::after{
+  color: aqua;
+}
+.custom-container-fluid {
+  max-width: 100%;
+  overflow: hidden;
+}
+

@@ -1,0 +1,81 @@
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 40px 0;
+  gap: 50px;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 60px;
+}
+
+.image-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: red;
+}
+
+/* Alternate layout */
+.image-card.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.image-card img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-card:hover img {
+  transform: scale(1.05);
+}
+
+.text-content {
+  width: 45%;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px red;
+}
+
+.image-card.row-reverse .text-content {
+  text-align: right;
+}
+
+/* Smooth fade-in effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

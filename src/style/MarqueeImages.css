@@ -1,0 +1,25 @@
+
+.marquee-container {
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    position: relative;
+    z-index: 9999;
+   
+  }
+  .marquee-item {
+    margin: 0 20px;
+  }
+  
+  .marquee-image {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+ 
+  .marquee-image:hover {
+    transform: scale(1.1);
+  }
+  

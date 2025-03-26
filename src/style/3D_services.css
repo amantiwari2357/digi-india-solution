@@ -1,0 +1,245 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.service-section {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.service-section.active {
+  opacity: 1;
+  z-index: 1;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #fff;
+}
+.services-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-image {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  z-index: -1;
+  filter: blur(1px);
+}
+.services-slider {
+  width: 150%;
+  /* max-width: 600px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end; 
+  margin-right: 1PX; */
+  z-index: 100px;
+}
+.service-slide {
+  display: flex;
+  justify-content: flex-end;
+}
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 320px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 14px violet;
+  transition: transform 1s ease-in-out;
+  backdrop-filter: blur(1px);
+  margin-right: 0px;
+}
+/* .service-card:first-child {
+  margin-right: -50px;
+} */
+.service-card:hover {
+  transform: scale(1.05);
+}
+.service-image-container {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+.service-image:hover {
+  transform: scale(1.1);
+}
+h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  color: white;
+  font-size: 1rem;
+}
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-content h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #fff;
+}
+.service-content p {
+  font-size: 1rem;
+  color: #ddd;
+}
+@media (max-width: 768px) {
+  .services-container {
+      align-items: center;
+      padding-right: 0;
+  }
+  .services-slider {
+      width: 90%;
+  }
+}
+
+
+
+
+
+
+/* Container Styling */
+.threeD-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+  color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  perspective: 1200px; /* Increased 3D Depth */
+}
+
+/* Text Content Styling */
+.threeD-content {
+  max-width: 50%;
+}
+
+.threeD-content h2 {
+  color: violet;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.threeD-content span {
+  color: #00c3ff;
+  font-weight: bold;
+}
+
+.threeD-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Image Container */
+.threeD-image {
+  position: relative;
+  max-width: 40%;
+  perspective: 1500px; /* Stronger 3D Perspective */
+}
+
+/* Recliner Image Styling */
+.threeD-image img {
+  width: 100%;
+  transform-style: preserve-3d;
+  animation: reclinerRotate 6s infinite linear, reclinerBounce 2s infinite ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+/* 3D Rotation Animation with Depth */
+@keyframes reclinerRotate {
+  0% {
+    transform: rotateY(0deg) rotateX(10deg) rotateZ(0deg);
+  }
+  25% {
+    transform: rotateY(90deg) rotateX(-5deg) rotateZ(3deg);
+  }
+  50% {
+    transform: rotateY(180deg) rotateX(10deg) rotateZ(-3deg);
+  }
+  75% {
+    transform: rotateY(270deg) rotateX(-5deg) rotateZ(3deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(10deg) rotateZ(0deg);
+  }
+}
+
+/* Floating Bounce Effect */
+@keyframes reclinerBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+}
+
+/* Hover Effect - Adds Interactive 3D Tilt */
+.threeD-image img:hover {
+  transform: rotateY(20deg) rotateX(10deg) scale(1.1);
+  filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.7));
+}
+
+.threeD-video {
+  width: 80%;
+  max-width: 500px; /* Adjust size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.threeD-media {
+  width: 100%;
+  border-radius: 10px;
+}

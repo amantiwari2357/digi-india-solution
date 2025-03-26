@@ -1,0 +1,150 @@
+/* Carrier Page Styles */
+.carrier-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    background-color: black;
+    z-index: 9999;
+}
+h2 {
+    font-size: 2.5rem;
+    color: violet;
+    font-weight: bold;
+}
+
+h2 span {
+    color: #007bff;
+}
+
+/* Search & Filter */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-container input,
+.filter-container select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px red;
+}
+
+/* Job Listings */
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.job-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+    box-shadow: red;
+}
+
+.job-card h3 {
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.job-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.job-card button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.job-card button:hover {
+    background: #0056b3;
+}
+
+.job-description {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Popup Form */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    right: 400px;
+    top: 55px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup-content input,
+.popup-content select,
+.popup-content button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background: #0056b3;
+}
+
+.message {
+    color: green;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}

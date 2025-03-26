@@ -1,0 +1,85 @@
+.team-container {
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    text-align: center;
+  }
+  
+  .team-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .team-description {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  .category-section {
+    margin-bottom: 3rem;
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .educator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+  .educator-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .educator-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .language {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educator-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .educator-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #0073b1; /* LinkedIn Blue */
+  }

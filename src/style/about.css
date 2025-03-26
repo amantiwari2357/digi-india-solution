@@ -1,0 +1,108 @@
+/* General Styling */
+.about-section {
+    background: linear-gradient(to right, #1c1c1c, #333);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Title & Description */
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  /* Company Details */
+  .company-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .detail {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .detail:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #facc15;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+  
+    .company-details {
+      grid-template-columns: 1fr;
+    }
+  
+    .social-icons a {
+      font-size: 1.2rem;
+    }
+  }
+  
